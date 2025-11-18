@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pengecekan Alat Ekstrikasi – Basarnas Denpasar</title>
+
 <style>
   body {
     background: url('Gambar chainsaw.png') no-repeat center center fixed;
@@ -11,15 +12,43 @@
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
-  .logo-container { margin-top: 40px; }
-  .logo-container img { height: 120px; margin: 0 20px; }
-  h1 { margin-top: 20px; font-size: 36px; font-weight: bold; }
-  h2 { font-size: 22px; }
+
+  .logo-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo-container img {
+    height: 130px;
+    max-width: 40%;
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 20px;
+  }
+
   .btn {
     display: block;
     width: 350px;
-    margin: 20px auto;
+    max-width: 85%;
+    margin: 15px auto;
     padding: 15px;
     background: rgba(0,0,0,0.7);
     color: white;
@@ -27,20 +56,67 @@
     text-decoration: none;
     font-size: 18px;
   }
+
+  /* ============================
+          RESPONSIVE HP
+     ============================ */
+  @media (max-width: 600px) {
+    .logo-container img {
+      height: 90px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+
+  /* HP ukuran sangat kecil */
+  @media (max-width: 380px) {
+    .logo-container img {
+      height: 75px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+  }
 </style>
 </head>
+
 <body>
 
 <div class="logo-container">
   <img src="LOGO BASARNAS (2).png" />
-  <img src="Adobe Express - file (1) (1).png" />
   <img src="Adobe Express - file_.png" />
+  <img src="Adobe Express - file (1) (1).png" />
 </div>
 
 <h1>PENGECEKAN ALAT EKSTRIKASI</h1>
 <h2>Kantor Pencarian dan Pertolongan Kelas A Denpasar</h2>
-<p>Selamat datang di Portal Pemeriksaan Alat ekstrikasi<br>
-Kantor Pencarian dan Pertolongan Kelas A Denpasar</p>
+
+<p>
+  Selamat datang di Portal Pemeriksaan Alat ekstrikasi<br>
+  Kantor Pencarian dan Pertolongan Kelas A Denpasar
+</p>
 
 <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSffYVXzM2NPlHmPkAdxTqN0dde94--zApI9FvjkbMoPHE86nw/viewform?usp=dialog">FORM PENGECEKAN ALAT EKSTRIKASI</a>
 <a class="btn" href="https://drive.google.com/drive/folders/118sUHRg6x61-q4fckRZ3zHBlwtIdU35X">HASIL PENGECEKAN ALAT EKSTRIKASI</a>
